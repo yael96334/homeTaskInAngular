@@ -1,0 +1,96 @@
+@import "../../../css/globals-files/variables.scss";
+
+.p-button {
+    border-radius: 4px;
+    font-weight: normal;
+
+    &.p-button-outlined {
+        background-color: transparent;
+        color: $blue;
+        border: 1px solid $blue;
+
+        &:enabled:hover {
+            background: rgba(0,86,117,.04);
+        }
+    
+        &:enabled:active {
+            background: rgba(0,86,117,.16);
+        } 
+    }
+    
+
+    &.p-button-filled {
+        background-color: $blue;
+        color: $white;
+        border-color: $blue;
+    }
+
+
+    // small button
+    &.p-button-sm {
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+        min-width: 8.5rem;
+    }
+
+    &.p-button-lg {
+        height: 2.625rem;
+        font-size: 1rem;
+    }
+
+    &.grey-button {
+        background-color: $grey !important;
+        border-color: $grey !important;
+        color: $text-1 !important;
+    }
+
+    &.p-icon-button {
+        border: none;
+        background: none;
+        height: 2.25rem;
+        color: $blue;
+    }
+}
+
+.p-button:focus {
+    box-shadow: none;
+}
+
+.p-button.p-button-icon-only{
+    padding: 0.5rem 0 !important;
+}
+// .p-button:not(.p-autocomplete-dd .p-autocomplete-dropdown) {
+//      min-width: 8.5rem;
+//      justify-content: center;
+// }
+
+
+// .p-button:focus {
+//     box-shadow: none;
+// }
+
+// .p-button-rounded {
+//     min-width: 0 !important;
+// }
+
+// .p-button-text{
+//     min-width: 0 !important;
+// }
+
+// .p-button-sm {
+//     border: 1px solid ;
+//     font-size: 1rem;
+//     line-height: 1rem;
+//     width: 100%;
+
+//     .p-button {
+//         width: 100% !important;
+//         height: 2rem;
+//     }
+// }
+
+// .p-button.p-button-text {
+//     color: $blue;
+// }

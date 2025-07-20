@@ -1,0 +1,45 @@
+@import "../../../../assets/css/globals-files/variables.scss";  
+
+.p-selectbutton .p-button.p-highlight {
+    background-color: $blue !important;
+}
+
+.p-selectbutton .p-button:not(.p-highlight) {
+    background-color: $grey !important;
+    color: $text-1;
+
+    &:hover {
+        background-color: $grey !important;
+        color: $text-1; 
+    }
+
+}
+
+.p-selectbutton .p-button.p-highlight {
+    background-color: #005675 !important;
+}
+
+.p-selectbutton .p-button.p-highlight {
+    background: #545b62;
+    border-color: #4e555b;
+    color: #fff;
+}
+
+.p-buttonset .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.p-buttonset .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.p-buttonset .p-button {
+    padding: 0.5rem 0.75rem;
+    width: 7rem;
+}

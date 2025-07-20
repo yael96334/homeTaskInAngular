@@ -1,0 +1,28 @@
+@import "../../globals-files/variables.scss";
+
+.p-slider {
+
+    background-color: $grey;
+    
+    .p-slider-handle {
+        border-radius: 50%;
+        border-color: $blue;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
+    .p-slider-range {
+        background-color: $yellow;
+    }
+
+    .p-slider-handle:focus {
+        box-shadow: none;
+    } 
+}
+
+
+.p-slider.p-slider-horizontal {
+    height: 2px;
+}

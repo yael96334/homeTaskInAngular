@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/css/globals-files/variables.scss';
+@import './assets/css/globals-files/fonts.scss';
+@import './assets/css/globals-files/inline-spacing.scss';
+// @import './assets/css/primeng/theme';
+@import './assets/css/primeng/components/button.scss';
+@import './assets/css/primeng/components/input.scss';
+@import './assets/css/primeng/components/card.scss';
+@import './assets/css/primeng/components/steps.scss';
+@import './assets/css/primeng/components/dropdown.scss';
+@import './assets/css/primeng/components/autocomplate.scss';
+@import './assets/css/primeng/components/inputswitch.scss';
+@import './assets/css/primeng/components/progress-bar.scss';
+@import './assets/css/primeng/components/image.scss';
+@import './assets/css/primeng/components/checkbox.scss';
+@import './assets/css/primeng/components/slider.scss';
+@import './assets/css/primeng/components/chip.scss';
+@import './assets/css/primeng/components/colorpicker.scss';
+@import './assets/css/primeng/components/overlay-panel.scss';
+@import './assets/css/primeng/components/menu.scss';
+@import './assets/css/primeng/components/dialog.scss';
+@import './assets/css/primeng/components/table.scss';
+@import './assets/css/primeng/components/confirmdialog.scss';
+@import './assets/css/primeng/components/inputgroup.scss';
+@import './assets/css/primeng/components/selectButton.scss';
+@import './assets/css/primeng/components/multiselect.scss';
+@import './assets/css/primeng/components/accordion.scss';
+@import './assets/css/primeng/components/tabs.scss';
+@import './assets/css/globals-files/scrollbar.scss';
+@import './assets/css/globals-files/ltr-direction.scss';
+@import './assets/css/primeng/components/tree.scss';
+@import './assets/css/primeng/components/calendar.scss';
+
+/*icons*/
+@import url('./assets/icons/pulse/style.css');
+@import url('./assets/icons/open-book/style.css');
+@import url('./assets/icons/shop/style.css');
+@import url('./assets/icons/shopping-bag/style.css');
+@import url('./assets/icons/remove-moke-up/style.css');
+@import url('./assets/icons/support/style.css');
+@import url('./assets/icons/settings/style.css');
+@import url('./assets/icons/clock/style.css');
+@import url('./assets/icons/note/style.css');
+@import url('./assets/icons/avatar/style.css');
+@import url('./assets/icons/keyboard/style.css');
+@import url('./assets/icons/arrow-down/style.css');
+@import url('./assets/icons/magic-wand/style.css');
+@import url('./assets/icons/drag/style.css');
+@import url('./assets/icons/filter/style.css');
+@import url('./assets/icons/more-dots/style.css');
+@import url('./assets/icons/info/style.css');
+@import url('./assets/icons/triangular/style.css');
+@import url('./assets/icons/mobile/style.css');
+@import url('./assets/icons/envelope/style.css');
+@import url('./assets/icons/apple/style.css');
+@import url('./assets/icons/windows/style.css');
+@import url('./assets/icons/linux/style.css');
+@import url('./assets/icons/pencil/style.css');
+@import url('./assets/icons/whatsapp/style.css');
+@import url('./assets/icons/comment/style.css');
+@import url('./assets/icons/telegram/style.css');
+@import url('./assets/icons/envelope/style.css');
+@import url('./assets/icons/print/style.css');
+@import url('./assets/icons/home/style.css');
+@import url('./assets/icons/view-image/style.css');
+@import url('./assets/icons/log/style.css');
+
+
+
+body,
+html {
+  margin: 0;
+
+  * {
+    font-family: Rubik;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.icon-32 {
+  font-size: 2rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.wizard-steps {
+  width: 50%;
+}
+
+.field {
+  margin-bottom: 2rem !important;
+}
+
+.field > label{
+  margin-bottom: 0.1rem !important;
+}
+
+address {
+  display: block;
+  font-style: normal !important;
+}
+
+@media (max-width: 1400px) {
+
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+
+.label {
+  color: $text-2;
+  margin-inline-start: 0.5rem;
+  font-size: 1rem;
+
+}
+
+
+.form-group label {
+  color: $text-2;
+  margin-inline-start: 0.5rem;
+  font-size: 1rem;
+}
+
+.wizard-step-title {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  color: $text-2;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+}
+
+
+:root {
+  --color-param: #ff0000; /* Default color */
+}
+.title-div {
+  // background-color : var(--color-param),           //:#156d36;
+  background-color: var(--color-param);
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius:0.5rem;
+  text-align: center;
+  line-height: 5rem;
+}
+

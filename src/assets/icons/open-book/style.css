@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'open-book';
+  src:  url('fonts/open-book.eot?uxo6v3');
+  src:  url('fonts/open-book.eot?uxo6v3#iefix') format('embedded-opentype'),
+    url('fonts/open-book.ttf?uxo6v3') format('truetype'),
+    url('fonts/open-book.woff?uxo6v3') format('woff'),
+    url('fonts/open-book.svg?uxo6v3#open-book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-open-book-"], [class*=" i-open-book-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'open-book' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.i-open-book-icon:before {
+  content: "\e900";
+  color: #005675;
+}

@@ -1,0 +1,32 @@
+.btns {
+    gap: 1rem;
+}
+
+::ng-deep .fixed-btn {
+    min-width: 160px;
+}
+
+input[type="text"] {
+    height: 3rem;
+    box-sizing: border-box;
+}
+
+.img {
+    cursor: pointer;
+}
+
+::ng-deep .p-tabview .p-tabview-nav {
+    border-bottom: 2px solid #005675;
+    margin-bottom: 0.5rem;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    color: #005675;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    color: #f97316 !important;
+}

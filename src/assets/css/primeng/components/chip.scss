@@ -1,0 +1,12 @@
+@import "../../../css/globals-files/variables.scss";
+
+.p-chip {
+    background-color: $grey;
+    height: 1.5rem;
+    padding-inline-start: 0.25rem;
+}
+
+.p-chips .p-chips-multiple-container .p-chips-token .p-chips-token-icon {
+    margin-inline-start: 0.5rem;
+    margin-inline-end: 0 !important;
+}

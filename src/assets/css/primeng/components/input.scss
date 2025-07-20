@@ -1,0 +1,84 @@
+@import "../../../css/globals-files/variables.scss";
+
+.p-inputtext,
+.p-inputwrapper {
+    width: 100%;
+}
+
+.p-inputtext {
+    display: inline-block;
+    padding-block: 0.5rem;
+}
+
+.p-inputtext {
+    background-color: $white;
+    border-color: $grey;
+    border-radius: 0;
+}
+
+.p-inputtext:enabled:hover {
+    border-color: #ebebeb;
+}
+
+.p-inputtext:enabled:focus {
+    box-shadow: none;
+    border-color: $grey;
+}
+
+.p-inputtext:enabled:hover,
+.p-inputtext:enabled:focus {
+    background-color: $white;
+}
+
+.p-input-icon-left>i:first-of-type {
+    color: $blue;
+}
+
+input.p-inputtext:disabled {
+    background-color: $grey;
+    color: $text-1 !important;
+    opacity: 1;
+}
+
+.p-inputtext {
+    color: $text-1;
+}
+
+
+.p-input-icon-left>i:first-of-type {
+    inset-inline-start: unset !important;
+    inset-inline-end: 0.75rem !important;
+}
+
+.p-input-icon-left>.p-inputtext {
+    padding-inline-end: 2.5rem !important;
+    padding-inline-start: 0.75rem !important;
+}
+
+.p-input-icon-left {
+    .pi-times {
+        cursor: pointer;
+    }
+}
+
+.p-input-icon-left>.p-inputtext.internal-ltr,
+.p-input-icon-left>.p-inputtext.internal-rtl {
+    padding-inline-start: 2.5rem !important;
+    padding-inline-end: 0.75rem !important;
+}
+
+p-password.ng-invalid.ng-dirty>.p-password>.p-inputtext {
+    border-color: #e24c4c;
+}
+
+.p-inputtext.ng-dirty.ng-invalid{
+    border-color: #e24c4c;
+}
+
+p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext{
+    border-color: #e24c4c;
+}
+
+p-inputnumber.ng-dirty.ng-invalid > .p-inputnumber > .p-inputtext{
+    border-color: #e24c4c;
+}

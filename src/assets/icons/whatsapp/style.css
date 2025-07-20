@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'whatsapp';
+  src:  url('fonts/whatsapp.eot?8wdieu');
+  src:  url('fonts/whatsapp.eot?8wdieu#iefix') format('embedded-opentype'),
+    url('fonts/whatsapp.ttf?8wdieu') format('truetype'),
+    url('fonts/whatsapp.woff?8wdieu') format('woff'),
+    url('fonts/whatsapp.svg?8wdieu#whatsapp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-watsapp-"], [class*=" i-watsapp-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'whatsapp' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-watsapp-icon:before {
+  content: "\e900";
+  color: #005675;
+}

@@ -1,0 +1,17 @@
+[dir="ltr"] .pi-arrow-right {
+  transform: scaleX(-1);
+}
+
+[dir="ltr"] .speech-bubble,
+[dir="ltr"] .bubble-text {
+  line-height: 1rem;
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] chevronrighticon.p-element.p-icon-wrapper.ng-star-inserted {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] chevronlefticon.p-element.p-icon-wrapper.ng-star-inserted {
+  transform: rotate(180deg);
+}

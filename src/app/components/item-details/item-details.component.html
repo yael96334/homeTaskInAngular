@@ -1,0 +1,17 @@
+<button pButton  severity="warning" label="Back" icon="pi pi-arrow-left" (click)="goBack()" class="p-button-secondary"></button>
+<div style="display: flex; justify-content: center;height: 90vh;">
+    <div class="flex flex-col p-6 gap-4"
+      >
+        <div class="md:w-40 relative">
+            <img class="block xl:block mx-auto rounded w-full" [src]="item?.Poster" [alt]="item?.Title" />
+        </div>
+        <div>
+                    <div class="font-bold text-lg blue-text">{{ item?.Title }}</div>
+                    <div class="p-mb-2 blue-text"><strong>Year:</strong> {{ item?.Year | date:'dd/MM/yyyy'}}</div>
+                    <div class="p-mb-2 blue-text"><strong>IMDB ID:</strong> {{ item?.imdbID }}</div>
+                    <p-tag  styleClass="custom-tag" severity="warning" value="{{ item?.Type }}" [rounded]="true"></p-tag>
+        </div>
+
+    </div>
+
+</div>

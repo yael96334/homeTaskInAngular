@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'avatar';
+  src:  url('fonts/avatar.eot?l41vdq');
+  src:  url('fonts/avatar.eot?l41vdq#iefix') format('embedded-opentype'),
+    url('fonts/avatar.ttf?l41vdq') format('truetype'),
+    url('fonts/avatar.woff?l41vdq') format('woff'),
+    url('fonts/avatar.svg?l41vdq#avatar') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-avatar-"], [class*=" i-avatar-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'avatar' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-avatar-icon:before {
+  content: "\e900";
+  color: #fff;
+}

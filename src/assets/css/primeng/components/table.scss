@@ -1,0 +1,103 @@
+p-paginator {
+    direction: ltr;
+}
+
+.p-datatable-wrapper {
+    border: 1px solid $grey;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: $white;
+}
+
+
+.p-datatable .p-datatable-thead>tr>th {
+    border: none !important;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    // padding: 0.5rem;
+    vertical-align: top; 
+}
+
+.p-datatable-resizable-table>.p-datatable-thead>tr>th {
+    // text-align: start;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: $white;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+    background-color: $light-grey;
+
+    .actions-div {
+        visibility: visible;
+    }
+}
+
+.p-datatable-resizable-table>.p-datatable-tbody>tr>td {
+    text-align: start;
+}
+
+.p-datatable .p-datatable-thead > tr > th{
+    text-align: start !important;
+}
+
+
+.p-paginator .p-paginator-last {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.p-paginator .p-paginator-first {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.p-datatable .p-paginator-bottom {
+    direction: ltr;
+}
+
+.p-paginator .p-paginator-rpp-options {
+    direction: rtl;
+}
+
+.p-datatable .p-datatable-tbody > tr > td{
+    vertical-align: middle !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.p-datatable .p-sortable-column.p-highlight:hover,
+.p-datatable .p-sortable-column:not(.p-highlight):hover {
+    background: transparent !important; 
+    color: $text-2 !important; 
+}
+
+.p-datatable .p-sortable-column:focus {
+    box-shadow: none !important;
+    color: $text-2 !important;
+}
+
+.p-datatable .p-sortable-column.p-highlight {
+    color: $text-2 !important;
+
+}
+
+.p-datatable .p-datatable-tbody > tr,
+.p-datatable .p-datatable-thead > tr {
+    border-bottom: 1px solid $grey;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background-color: $blue;
+    color: $white;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page,
+.p-paginator-prev, .p-paginator-next {
+    border-radius: 50% ;
+}

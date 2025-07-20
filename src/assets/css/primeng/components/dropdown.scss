@@ -1,0 +1,69 @@
+@import "../../globals-files/variables.scss";
+
+ .p-dropdown {
+    background-color: $white !important;
+    border-radius: 0;
+    border-color: $grey;
+}
+
+.p-dropdown-trigger-icon {
+    width: 0;
+    height: 0;
+    border: 0.25rem solid transparent;
+    border-bottom: 0;
+    border-top: 0.5rem solid $blue;
+}
+
+ .p-dropdown:not(.p-disabled):hover {
+    background-color: $white;
+}
+
+.p-dropdown:not(.p-disabled):hover {
+    border-color: $grey;
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+    box-shadow: none;
+    border-color: $grey;
+}
+
+.p-dropdown-panel .p-dropdown-header .p-dropdown-filter {
+    margin-right: 0;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+    background-color: $grey !important;
+}
+
+
+.p-paginator .p-dropdown .p-dropdown-label {
+    padding-inline-start: 0.5rem !important;
+    padding-inline-end: 0 !important;
+}
+
+.p-paginator .p-dropdown {
+    width: 7rem;
+}
+.p-dropdown .p-dropdown-clear-icon{
+    inset-inline-start: auto;
+    inset-inline-end: 3rem;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    span {
+        color: $blue !important;
+    }
+}
+
+.p-dropdown.p-dropdown-clearable .p-dropdown-label {
+    padding-inline-start: 1rem !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight.p-focus {
+    background-color: $grey;
+    color: $blue;
+}
+
+p-dropdown.ng-dirty.ng-invalid > .p-dropdown{
+    border-color: #e24c4c;
+}

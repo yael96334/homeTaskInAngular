@@ -1,0 +1,12 @@
+.p-progressbar {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    height: 0.2rem;
+    width: 100%;
+    background: #e9ecef;
+}
+
+.p-progressbar .p-progressbar-value {
+    background: #005675
+}

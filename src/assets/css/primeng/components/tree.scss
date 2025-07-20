@@ -1,0 +1,42 @@
+.p-tree {
+    border: none !important;
+    padding: 0 !important;
+
+    .p-treenode-children {
+        padding: 0 1rem 0 0 !important;
+    }
+
+    .p-treenode-label {
+        width: 100%;
+    }
+
+    .p-tree-container .p-treenode {
+        padding-inline-start: 0 !important;
+        
+        .p-treenode-content:focus,
+        .p-treenode-content .p-tree-toggler:focus {
+            outline: none !important;
+            box-shadow: none !important;
+
+        }
+        
+        .p-treenode-content .p-tree-toggler {
+            margin-inline-end: 0.5rem !important;
+            margin-inline-start: 0 !important;
+            width: auto;
+        }
+
+        .p-treenode-content {
+            padding-inline-start: 0 !important;
+        }
+
+        &:focus > .p-treenode-content {
+            box-shadow: none !important;
+        }
+
+    }
+}
+
+.p-treenode-leaf>.p-treenode-content .p-tree-toggler { 
+    display: none;
+}

@@ -1,0 +1,119 @@
+// general definisions
+.p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+    box-shadow: none !important;
+}
+
+.p-accordion {
+    .i-arrow-down-icon {
+        font-size: 0.5rem !important;
+
+        &.rotate-up {
+            transform: rotate(180deg);
+        }
+    }
+
+}
+
+
+.data-list {
+
+    .p-accordion .p-accordion-header .p-accordion-header-link {
+
+        border: none !important;
+        border-bottom: 2px solid $grey !important;
+        height: 2rem;
+        padding-block: 0 !important;
+        border-radius: 0;
+    
+        &:hover {
+            background-color: $light-grey !important;
+        }
+    
+        span {
+            color: $text-2;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+    
+    .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+        background-color: $light-grey !important;
+    
+        &:hover {
+            background-color: $light-grey !important;
+    
+        }
+    }
+    
+    .p-accordion .p-accordion-content {
+        border: none !important;
+        padding-top: 1.5rem;
+        padding-inline: 0 !important;
+    }
+    
+    .p-accordion {
+        .i-arrow-down-icon {
+            margin-inline-start: auto;
+            margin-inline-end: 0 !important;
+    
+            &::before {
+                color: $text-2;
+            }
+        }
+    
+    }
+}
+
+.channels-wrapper {
+    .p-accordion .p-accordion-header .p-accordion-header-link {
+        width: calc(100% + 10rem);
+        margin-inline: -5rem;
+        padding-inline: 2.5rem;
+    }
+}
+
+.accordion{
+    .p-accordion .p-accordion-header .p-accordion-header-link {
+        border: none !important;
+        background: none !important;
+        color: #4b5563 !important;
+        border-radius: 0;
+        &:hover {
+            background-color: $light-grey !important;
+        }
+        span {
+            color: #4b5563 !important;
+        }
+    }
+}
+
+
+#SideBar {
+    .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link,
+    .p-accordion p-accordiontab:last-child .p-accordion-header:not(.p-highlight) .p-accordion-header-link {
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin: 0;
+        border: none !important;
+        border-bottom: 1px solid #EBEBEB !important;
+        border-radius: 0 !important;
+        padding: 0 1rem !important;
+        background-color: $white !important;
+        font-weight: normal !important;
+        text-decoration: none !important;
+
+        .i-arrow-down-icon::before {
+                color: $blue;
+            }
+    }
+
+    .p-accordion-content {
+        padding: 0 !important;
+        border: 1px solid $grey;
+        border-radius: 0;
+    }
+
+    .p-accordion p-accordiontab .p-accordion-tab {
+        margin-bottom: 0;
+    }
+}

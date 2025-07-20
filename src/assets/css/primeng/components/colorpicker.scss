@@ -1,0 +1,19 @@
+@import "../../globals-files/variables.scss";
+
+.color-container {
+    input {
+        height: 2.625rem !important;
+        border: 1px solid $grey;
+    }
+
+    input:focus-visible {
+        outline: none !important;
+    }
+
+    .color-picker {
+        border-color: $grey;
+        top: calc(100% + 0.5rem) !important;
+        inset-inline-end: 0 !important;
+    }
+
+}

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'support';
+  src:  url('fonts/support.eot?wo94zs');
+  src:  url('fonts/support.eot?wo94zs#iefix') format('embedded-opentype'),
+    url('fonts/support.ttf?wo94zs') format('truetype'),
+    url('fonts/support.woff?wo94zs') format('woff'),
+    url('fonts/support.svg?wo94zs#support') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-support-"], [class*=" i-support-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'support' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-support-icon:before {
+  content: "\e900";
+  color: #fff;
+  font-size: 3rem;
+}

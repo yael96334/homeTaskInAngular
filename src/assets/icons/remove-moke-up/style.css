@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'remove-moke-up';
+  src:  url('fonts/remove-moke-up.eot?youk8a');
+  src:  url('fonts/remove-moke-up.eot?youk8a#iefix') format('embedded-opentype'),
+    url('fonts/remove-moke-up.ttf?youk8a') format('truetype'),
+    url('fonts/remove-moke-up.woff?youk8a') format('woff'),
+    url('fonts/remove-moke-up.svg?youk8a#remove-moke-up') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-remove-moke-up-"], [class*=" i-remove-moke-up-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'remove-moke-up' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-remove-moke-up-icon:before {
+  content: "\e900";
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+<div class="container mt-3">
+    <div class="grid btns mt-3 justify-content-center">
+
+        <p-button  label="Search By Name" [icon]="sortAsc ? 'pi pi-sort-alpha-down' : 'pi pi-sort-alpha-up'"
+            severity="warning" iconPos="right" (click)="changeSort()">
+        </p-button>
+        <p-button [label]="viewMode === Display.List ? 'Display List' : 'Display Grid'" severity="warning"
+            [icon]="viewMode === Display.List ? 'pi pi-list' : 'pi pi-th-large'" iconPos="right"
+            (click)="toggleView()" />
+        <p-button severity="warning" label="Refresh" icon="pi pi-refresh" iconPos="right" (click)="refresh()" />
+        <div>
+            <span class="p-input-icon-left w-100">
+                <i class="pi pi-times" (click)="clearSearch()"></i>
+                <input type="text" placeholder="Search By Name Or Year" (input)="filterItems()" [(ngModel)]="freeSearch"
+                    pInputText />
+            </span>
+        </div>
+    </div>
+
+    <p-tabView styleClass="my-tabview"[(activeIndex)]="activeIndex" (onChange)="onTabChange($event)">
+        @for(type of getTypes(); track type;){
+        <p-tabPanel [header]="type + ' (' + types[type].length + ')'">
+        </p-tabPanel>}
+    </p-tabView>
+
+    
+
+    @if(viewMode === Display.List)
+    { <div class="list-group mt-3"  style="min-height: 120px">
+        @for(item of filteredItems; track item;){
+        <div class="p-3 border-bottom-1 border-300 flex align-items-center gap-3 ">
+            <img [src]="item.Poster"  width="100" height="100"  class="rounded img" (click)="goToDetail(item)" />
+            <div>
+                @if(!isEdit)
+                {<div (click)="isEdit = true" class="font-bold text-lg blue-text">{{ item.Title }}</div>}
+                @else
+                {<input pInputText [(ngModel)]="item.Title"
+                    (blur)="isEdit = false; updateTitle(item, item.Title)" />}
+                <div class="text-sm text-muted blue-text">{{ item.Year | date:'yyyy' }}</div>
+                <p-tag [value]="item.Type" severity="warning" styleClass="ml-1" [rounded]="true"></p-tag>
+            </div>
+        </div>
+        }
+    </div>}
+
+    <!-- Grid View -->
+    @else{
+    <div class="row mt-3" >
+        @for(item of filteredItems; track item;){
+        <div class="col-md-3 mb-3" >
+            <div class="card">
+                <div class="p-3 border-1 border-300 border-round text-center" style="min-height: 330px">
+                    <img [src]="item.Poster" alt="Poster" class="mb-2 w-full img" style="max-height:200px;" (click)="goToDetail(item)" />
+                    @if(!isEdit)
+                    { <div (click)="isEdit = true" class="font-bold text-lg blue-text">{{ item.Title }}</div>}
+                    @else
+                    { <input pInputText [(ngModel)]="item.Title"
+                        (blur)="isEdit = false; updateTitle(item, item.Title)" />}
+                    <div class="text-sm text-muted mb-2 blue-text">{{ item.Year | date:'yyyy' }}</div>
+                    <p-tag [value]="item.Type" severity="warning" styleClass="mt-2" [rounded]="true"></p-tag>
+                </div>
+            </div>
+        </div>
+        }
+    </div>}
+</div>
+<p-toast position="bottom-left"></p-toast>

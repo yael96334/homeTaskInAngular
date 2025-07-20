@@ -1,0 +1,53 @@
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    background-color: transparent !important;
+    padding: 1px;
+    border-width: 0 !important;
+    text-decoration: none !important;
+}
+
+.p-tabview .p-tabview-nav {
+    border: none;
+    justify-content: center;
+    
+}
+
+.p-tabview-nav {
+    gap: 1rem;
+    background-color: transparent !important;
+
+}
+.p-tabview-panels{
+    background-color: transparent !important;
+}
+
+.p-tabview .p-tabview-nav li:not(.p-highlight) {
+
+    .p-button-sm {
+            background-color: #EBEBEB !important;
+            border-color: #EBEBEB !important;
+            color: #333333 !important;
+    }
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    border: none !important;
+}
+
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.p-tabview-nav-content {
+    background-color: transparent !important;
+    padding-block: 1.5rem;
+}
+
+
+a.p-accordion-header-link {
+    text-decoration: none !important;
+}
+
+.ravkav-tabs .p-tabview-panels {
+    display: none;
+}

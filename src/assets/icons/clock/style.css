@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'clock';
+  src:  url('fonts/clock.eot?te9un9');
+  src:  url('fonts/clock.eot?te9un9#iefix') format('embedded-opentype'),
+    url('fonts/clock.ttf?te9un9') format('truetype'),
+    url('fonts/clock.woff?te9un9') format('woff'),
+    url('fonts/clock.svg?te9un9#clock') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-clock-"], [class*=" i-clock-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'clock' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-clock-icon:before {
+  content: "\e900";
+}

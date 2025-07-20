@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'windows';
+  src:  url('fonts/windows.eot?mq92rp');
+  src:  url('fonts/windows.eot?mq92rp#iefix') format('embedded-opentype'),
+    url('fonts/windows.ttf?mq92rp') format('truetype'),
+    url('fonts/windows.woff?mq92rp') format('woff'),
+    url('fonts/windows.svg?mq92rp#windows') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-windows-"], [class*=" i-windows-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'windows' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-windows-icon:before {
+  content: "\e902";
+}

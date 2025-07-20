@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'shopping-bag';
+  src:  url('fonts/shopping-bag.eot?9fbbj2');
+  src:  url('fonts/shopping-bag.eot?9fbbj2#iefix') format('embedded-opentype'),
+    url('fonts/shopping-bag.ttf?9fbbj2') format('truetype'),
+    url('fonts/shopping-bag.woff?9fbbj2') format('woff'),
+    url('fonts/shopping-bag.svg?9fbbj2#shopping-bag') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-shopping-bag-"], [class*=" i-shopping-bag-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'shopping-bag' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-shopping-bag-icon:before {
+  content: "\e900";
+  color: #fff;
+}

@@ -1,0 +1,58 @@
+.p-dialog {
+    border: none;
+    border-radius: 8px;
+    background-color: $white;
+
+    .p-dialog-header {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom: none;
+    }
+
+}
+
+.p-dialog .p-dialog-content:last-of-type {
+    border-radius: 8px !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-title {
+    color: $blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.close-dialog-icon.pi-times-circle {
+    font-size: 1.5rem;
+    color: $red;
+}
+
+//  css for dialog global component
+.dialog-component.p-dialog {
+    .p-dialog-header {
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    // .p-dialog-content {
+    //     padding-inline: 2rem;
+    // }
+}
+
+.p-dialog .p-dialog-content:last-of-type {
+   padding: 0rem 1rem 1.5rem 1rem !important;
+}
+
+.no-padding-dialog {
+    .dialog-component.p-dialog {
+        .p-dialog-content {
+           // padding-inline: 0.75rem !important;
+        }
+
+        .p-dialog-header {
+          //  padding-inline: 2rem !important;
+
+        }
+    }
+}
