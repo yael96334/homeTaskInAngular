@@ -5,7 +5,7 @@
             severity="warning" iconPos="right" (click)="changeSort()">
         </p-button>
         <p-button [label]="viewMode === Display.List ? 'Display List' : 'Display Grid'" severity="warning"
-            [icon]="viewMode === Display.List ? 'pi pi-list' : 'pi pi-th-large'" iconPos="right"
+            [icon]="viewMode === Display.List ? 'pi pi-bars' : 'pi pi-table'" iconPos="right"
             (click)="toggleView()" />
         <p-button severity="warning" label="Refresh" icon="pi pi-refresh" iconPos="right" (click)="refresh()" />
         <div>
